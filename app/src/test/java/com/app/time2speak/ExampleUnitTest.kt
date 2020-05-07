@@ -1,4 +1,4 @@
-package com.example.time2speak
+package com.app.time2speak
 
 import org.junit.Test
 

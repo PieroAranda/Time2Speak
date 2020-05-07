@@ -6,13 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/img_icono_logo"
+        android:layout_width="0dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="139dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_time2speak" />
+
+    <Button
+        android:id="@+id/btn_terapia"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="232dp"
+        android:text="Iniciar terapia del habla"
+        android:textColor="#E9EDED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_perfil_usuario" />
+
+    <Button
+        android:id="@+id/btn_perfil_usuario"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="16dp"
+        android:text="Perfil de Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/btn_terapia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_icono_logo"
+        app:layout_constraintVertical_bias="0.41000003" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
