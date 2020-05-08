@@ -22,11 +22,15 @@ class activity03 : AppCompatActivity() {
 
         img_mic.setOnClickListener {
             val alertDialogBuilder = AlertDialog.Builder(this)
+            val alertDialogBuilder2 = AlertDialog.Builder(this)
 
-            alertDialogBuilder.setMessage("Estas conforme con la grabacion?").setCancelable(false)
+            alertDialogBuilder.setMessage("Esta usted conforme con la grabacion?").setCancelable(false)
                 .setPositiveButton("Si",DialogInterface.OnClickListener(){_,_->
-                    val intent: Intent=Intent(this,feedback_Act::class.java)
-                    startActivity(intent)
+                    alertDialogBuilder2.setMessage("Su audio ha sido enviado").setCancelable(false)
+                        .setPositiveButton("Aceptar",DialogInterface.OnClickListener(){_,_->
+                            val intent: Intent=Intent(this,feedback_Act::class.java)
+                            startActivity(intent)
+                        }).create().show()
                 }).setNegativeButton("no",DialogInterface.OnClickListener(){dialog,_->
                     dialog.cancel()
                 }).create().show()
