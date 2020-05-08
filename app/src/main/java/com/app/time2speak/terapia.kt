@@ -1,19 +1,18 @@
 package com.app.time2speak
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_activity03.*
+import kotlinx.android.synthetic.main.activity_terapia.*
 
-class activity03 : AppCompatActivity() {
+class terapia : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_activity03)
+        setContentView(R.layout.activity_terapia)
 
 
         img_voice.setOnClickListener{
-            val intent: Intent = Intent(this,activity04::class.java)
+         //   val intent: Intent = Intent(this,practica_palabra::class.java)
             overridePendingTransition( R.anim.slide_in_right,R.anim.slide_out_left)
             startActivity(intent)
         }

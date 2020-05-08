@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity04">
+    tools:context=".practica_palabra">
 
     <TextView
         android:id="@+id/txt01"
@@ -33,7 +33,8 @@
         app:layout_constraintStart_toEndOf="@+id/txt01"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.066"
-        app:srcCompat="@drawable/altavoz" />
+        app:srcCompat="@drawable/altavoz"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -46,7 +47,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt01"
-        app:srcCompat="@drawable/enano_imagen" />
+        app:srcCompat="@drawable/enano_imagen"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/img_mic"
@@ -54,12 +56,13 @@
         android:layout_height="94dp"
         android:layout_marginStart="170dp"
         android:layout_marginEnd="163dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="104dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/microfono" />
+        app:srcCompat="@drawable/microfono"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/txt_progress"
@@ -69,7 +72,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
-        android:text="0 / 10"
+        android:text="@string/repeticionNumero"
         android:textAlignment="center"
         android:textColor="#673AB7"
         android:textSize="24sp"

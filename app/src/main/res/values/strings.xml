@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Time2Speak</string>
+    <string name="ExplicacionSpeak">Presiona REPRODUCIR para escuchar la pronunciación</string>
+    <string name="reproducir">Reproducir</string>
+    <string name="tituloLetras">Vamos a practicar</string>
+    <string name="repeticionNumero">0 / 10</string>
 </resources>

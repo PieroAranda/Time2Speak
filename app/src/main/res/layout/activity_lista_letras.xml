@@ -4,28 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vb02">
 
-
-
-    <TextView
-        android:id="@+id/txt01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="8dp"
-        android:text="Vamos a practicar"
-        android:textAlignment="center"
-        android:textColor="#673AB7"
-        android:textSize="24sp"
-        android:typeface="monospace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".lista_letras">
 
     <ImageView
-        android:id="@+id/img_icono_e"
+        android:id="@+id/img_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -35,24 +18,25 @@
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt01"
-        app:srcCompat="@drawable/icon_e"
+        app:srcCompat="@drawable/letter_a"
         />
 
+
     <ImageView
-        android:id="@+id/img_enano"
+        android:id="@+id/img_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_icono_e"
-        app:srcCompat="@drawable/enano" />
+        app:layout_constraintTop_toBottomOf="@+id/img_a"
+        app:srcCompat="@drawable/letter_b" />
 
     <ImageView
-        android:id="@+id/img_erizo"
+        android:id="@+id/img_c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,11 +44,11 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_enano"
-        app:srcCompat="@drawable/erizo" />
+        app:layout_constraintTop_toBottomOf="@+id/img_b"
+        app:srcCompat="@drawable/letter_c" />
 
     <ImageView
-        android:id="@+id/img_estrella"
+        android:id="@+id/img_d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -72,10 +56,36 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_erizo"
-        app:srcCompat="@drawable/estrella" />
+        app:layout_constraintTop_toBottomOf="@+id/img_c"
+        app:srcCompat="@drawable/letter_d" />
 
+    <TextView
+        android:id="@+id/txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tituloLetras"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/img_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_d"
+        app:srcCompat="@drawable/letter_e" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

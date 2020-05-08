@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val intent: Intent = Intent(this,vb01::class.java)
+        val intent: Intent = Intent(this,lista_letras::class.java)
         overridePendingTransition( R.anim.slide_in_right,R.anim.slide_out_left)
 
 
