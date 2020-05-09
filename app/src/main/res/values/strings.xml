@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Time2Speak</string>
     <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_detener">detener</string>
 </resources>
