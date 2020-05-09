@@ -14,7 +14,7 @@ class palabras_vocal : AppCompatActivity() {
 
 
         img_enano.setOnClickListener (){
-            val intent: Intent = Intent(this,terapia::class.java)
+            val intent = Intent(this,terapia::class.java)
             overridePendingTransition( R.anim.slide_in_right,R.anim.slide_out_left)
             startActivity(intent)
         }

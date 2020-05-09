@@ -13,4 +13,6 @@
     <string name="nacimiento">Fecha de Nacimiento</string>
     <string name="contrarepetir">Repetir Contraseña</string>
     <string name="mascota">Nombre de la mascota</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_detener">detener</string>
 </resources>

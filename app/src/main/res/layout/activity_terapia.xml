@@ -7,6 +7,24 @@
     tools:context=".terapia">
 
     <TextView
+        android:id="@+id/txt_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_mic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <TextView
         android:id="@+id/txtPalabraImagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,7 +74,10 @@
         android:layout_marginBottom="104dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_progress"
+        app:layout_constraintVertical_bias="0.82"
         app:srcCompat="@drawable/microfono"
         tools:ignore="VectorDrawableCompat" />
 
@@ -65,18 +86,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/repeticionNumero"
+        android:text="/10"
         android:textAlignment="center"
         android:textColor="#673AB7"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/img_mic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.386" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/btn_pause"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toEndOf="@+id/img_mic"
+        app:layout_constraintTop_toBottomOf="@+id/txt_progress"
+        app:layout_constraintVertical_bias="0.831"
+        app:srcCompat="@drawable/btn_pause" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
