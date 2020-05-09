@@ -9,15 +9,16 @@
 
     <ImageView
         android:id="@+id/img_icono_logo"
-        android:layout_width="228dp"
-        android:layout_height="153dp"
-        android:layout_marginStart="139dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="139dp"
+        android:layout_width="314dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_perfil_usuario"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_time2speak" />
+        app:layout_constraintVertical_bias="0.103"
+        app:srcCompat="@drawable/logotime2speak" />
 
     <Button
         android:id="@+id/btn_terapia"
@@ -26,7 +27,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginBottom="260dp"
         android:text="Iniciar terapia del habla"
         android:textColor="#E9EDED"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,11 +39,11 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_marginBottom="56dp"
         android:text="Perfil de Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/btn_terapia"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_icono_logo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

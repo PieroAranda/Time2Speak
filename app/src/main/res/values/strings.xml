@@ -4,4 +4,8 @@
     <string name="reproducir">Reproducir</string>
     <string name="tituloLetras">Vamos a practicar</string>
     <string name="repeticionNumero">0 / 10</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="inicioSesion">Iniciar Sesión</string>
+    <string name="registro">Registrarse</string>
 </resources>

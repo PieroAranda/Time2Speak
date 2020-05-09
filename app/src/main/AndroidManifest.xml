@@ -9,19 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".practica_palabra"></activity>
-        <activity android:name=".terapia" />
-        <activity android:name=".vb04" />
-        <activity android:name=".vb03" />
-        <activity android:name=".palabras_vocal" />
-        <activity android:name=".lista_letras" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".inicioSesion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".registro" />
+        <activity android:name=".terapia" />
+        <activity android:name=".palabras_vocal" />
+        <activity android:name=".lista_letras" />
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
