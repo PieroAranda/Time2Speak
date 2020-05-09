@@ -8,4 +8,9 @@
     <string name="contraseña">Contraseña</string>
     <string name="inicioSesion">Iniciar Sesión</string>
     <string name="registro">Registrarse</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="nacimiento">Fecha de Nacimiento</string>
+    <string name="contrarepetir">Repetir Contraseña</string>
+    <string name="mascota">Nombre de la mascota</string>
 </resources>
