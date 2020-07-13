@@ -12,7 +12,7 @@ class feedback_Act : AppCompatActivity() {
         setContentView(R.layout.activity_feedback_)
 
         btn_aceptar.setOnClickListener {
-            val intent:Intent=Intent(this,lista_letras::class.java)
+            val intent =Intent(this,lista_letras::class.java)
             startActivity(intent)
         }
     }
